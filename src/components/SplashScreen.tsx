@@ -39,19 +39,19 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         />
       </div>
 
-      {/* Logo Image - Top Right */}
-      <div className={`absolute top-4 right-4 z-20 transition-all duration-1000 ease-out ${
+      {/* Logo Image - Top Right - Bigger */}
+      <div className={`absolute top-6 right-6 z-20 transition-all duration-1000 ease-out ${
         showLogo ? 'opacity-100 transform translate-x-0 scale-100' : 'opacity-0 transform translate-x-8 scale-75'
       }`}>
-        <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg">
+        <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-lg">
           <img
             src="/lovable-uploads/90866cca-fd9a-4b6f-a86f-139f70fead7f.png"
             alt="Furrl Logo"
-            className="w-8 h-8 object-contain"
+            className="w-10 h-10 object-contain"
           />
         </div>
-        {/* Furrl text below logo */}
-        <div className={`text-white text-sm font-light tracking-wider mt-1 text-center transition-all duration-700 delay-300 ${
+        {/* Furrl text below logo - bigger */}
+        <div className={`text-white text-lg font-light tracking-wider mt-2 text-center transition-all duration-700 delay-300 ${
           showLogo ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'
         }`}>
           <span className="text-yellow-300">F</span>urrl
