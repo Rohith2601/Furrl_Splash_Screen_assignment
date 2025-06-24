@@ -12,7 +12,7 @@ const LoginPanel = ({ isVisible }: LoginPanelProps) => {
     <div className={`absolute bottom-0 left-0 right-0 z-30 transition-all duration-800 ease-out ${
       isVisible ? 'transform translate-y-0' : 'transform translate-y-full'
     }`}>
-      <div className="bg-white rounded-t-3xl px-4 py-5 mx-2 shadow-2xl">
+      <div className="bg-white rounded-t-3xl px-4 py-4 mx-2 shadow-2xl">
         <div className="grid gap-3">
           {/* Header Text */}
           <div className="text-center">
@@ -33,12 +33,12 @@ const LoginPanel = ({ isVisible }: LoginPanelProps) => {
                 placeholder="+91 Phone Number"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                className="w-full px-3 py-2.5 border border-gray-200 rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-100 text-sm"
+                className="w-full px-3 py-2 border border-gray-200 rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-100 text-sm"
               />
             </div>
 
             {/* Continue Button */}
-            <button className="w-full bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 text-sm">
+            <button className="w-full bg-purple-500 hover:bg-purple-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm">
               Continue
             </button>
           </div>
