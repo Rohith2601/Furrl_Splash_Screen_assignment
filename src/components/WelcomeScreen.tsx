@@ -1,6 +1,5 @@
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 
 interface WelcomeScreenProps {
   showLogin: boolean;
@@ -76,12 +75,10 @@ const WelcomeScreen = ({ showLogin, onShowLogin }: WelcomeScreenProps) => {
           showImage ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-16'
         }`}>
           <div className="relative w-64 h-80 mb-24">
-            <Image
+            <img
               src="/lovable-uploads/d00054d3-b496-4bf0-bfb7-e63951b7d873.png"
               alt="Fashion Model"
-              fill
-              className="object-cover rounded-lg"
-              priority
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
         </div>
