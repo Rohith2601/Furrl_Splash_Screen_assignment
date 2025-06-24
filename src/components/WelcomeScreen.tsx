@@ -27,22 +27,22 @@ const WelcomeScreen = ({ showLogin, onShowLogin }: WelcomeScreenProps) => {
   }, [onShowLogin]);
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-700 overflow-hidden">
-      {/* Purple Grid Background */}
+    <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-700 overflow-hidden">
+      {/* Black Grid Background */}
       <div className="absolute inset-0 opacity-30">
         <div 
           className="w-full h-full"
           style={{
             backgroundImage: `
-              linear-gradient(to right, rgba(139, 69, 193, 0.8) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(139, 69, 193, 0.8) 1px, transparent 1px)
+              linear-gradient(to right, rgba(0, 0, 0, 0.8) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 1px, transparent 1px)
             `,
             backgroundSize: '20px 20px'
           }}
         />
       </div>
 
-      {/* Furrl Logo - Top Right */}
+      {/* Furrl Logo - Top Right inside mobile screen */}
       <div className={`absolute top-4 right-4 z-20 transition-all duration-1000 ease-out ${
         showLogo ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform translate-x-8'
       }`}>
@@ -58,28 +58,28 @@ const WelcomeScreen = ({ showLogin, onShowLogin }: WelcomeScreenProps) => {
         <div className={`transition-all duration-1000 ease-out mb-1 ${
           showWelcome ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
         }`}>
-          <h1 className="text-white text-4xl sm:text-5xl font-bold tracking-wide">Welcome</h1>
+          <h1 className="text-white text-4xl font-bold tracking-wide">Welcome</h1>
         </div>
 
         {/* Subtext */}
         <div className={`transition-all duration-1000 ease-out mb-1 ${
           showSubtext ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-8'
         }`}>
-          <p className="text-purple-100 text-lg sm:text-xl font-light italic font-serif">to a world of</p>
+          <p className="text-purple-100 text-lg font-light italic font-serif">to a world of</p>
         </div>
 
         {/* Fashion Text */}
         <div className={`transition-all duration-1000 ease-out mb-6 ${
           showFashion ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'
         }`}>
-          <h2 className="text-white text-3xl sm:text-4xl font-bold tracking-wide">Fashion</h2>
+          <h2 className="text-white text-3xl font-bold tracking-wide">Fashion</h2>
         </div>
 
         {/* Fashion Model Image */}
         <div className={`transition-all duration-1200 ease-out ${
           showImage ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-16'
         }`}>
-          <div className="relative w-48 h-64 sm:w-56 sm:h-72 mb-16">
+          <div className="relative w-48 h-64 mb-16">
             <img
               src="/lovable-uploads/d00054d3-b496-4bf0-bfb7-e63951b7d873.png"
               alt="Fashion Model"
