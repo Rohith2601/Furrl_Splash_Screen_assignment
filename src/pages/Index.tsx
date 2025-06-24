@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from 'react';
+import SplashScreen from '@/components/SplashScreen';
+import WelcomeScreen from '@/components/WelcomeScreen';
+import LoginPanel from '@/components/LoginPanel';
 
 const Index = () => {
+  const [currentScreen, setCurrentScreen] = useState<'splash' | 'welcome'>('splash');
+  const [showLogin, setShowLogin] = useState(false);
+
+  const handleSplashComplete = () => {
+    setCurrentScreen('welcome');
+  };
+
+  const handleShowLogin = () => {
+    setShowLogin(true);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-black relative overflow-hidden">
+      {currentScreen === 'splash' && (
+        <SplashScreen onComplete={handleSplashComplete} />
+      )}
+      
+      {currentScreen === 'welcome' && (
+        <WelcomeScreen 
+          showLogin={showLogin} 
+          onShowLogin={handleShowLogin}
+        />
+      )}
+      
+      {currentScreen === 'welcome' && (
+        <LoginPanel isVisible={showLogin} />
+      )}
     </div>
   );
 };
