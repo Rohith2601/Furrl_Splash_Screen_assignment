@@ -45,7 +45,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       }`}>
         <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-lg">
           <img
-            src="/lovable-uploads/90866cca-fd9a-4b6f-a86f-139f70fead7f.png"
+            src="/image/90866cca-fd9a-4b6f-a86f-139f70fead7f.png"
             alt="Furrl Logo"
             className="w-10 h-10 object-contain"
           />

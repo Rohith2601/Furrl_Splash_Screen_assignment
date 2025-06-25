@@ -48,7 +48,7 @@ const WelcomeScreen = ({ showLogin, onShowLogin }: WelcomeScreenProps) => {
       }`}>
         <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-lg">
           <img
-            src="/lovable-uploads/90866cca-fd9a-4b6f-a86f-139f70fead7f.png"
+            src="/image/90866cca-fd9a-4b6f-a86f-139f70fead7f.png"
             alt="Furrl Logo"
             className="w-10 h-10 object-contain"
           />
@@ -89,7 +89,7 @@ const WelcomeScreen = ({ showLogin, onShowLogin }: WelcomeScreenProps) => {
         }`}>
           <div className="relative w-40 h-48 mb-8">
             <img
-              src="/lovable-uploads/d00054d3-b496-4bf0-bfb7-e63951b7d873.png"
+              src="/image/d00054d3-b496-4bf0-bfb7-e63951b7d873.png"
               alt="Fashion Model"
               className="w-full h-full object-cover rounded-lg shadow-2xl"
             />
